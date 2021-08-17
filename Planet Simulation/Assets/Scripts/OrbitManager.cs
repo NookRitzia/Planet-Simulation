@@ -14,7 +14,6 @@ public class OrbitManager : MonoBehaviour
     {
         if (revolvingPlanet == null)
             revolvingPlanet = this.gameObject;
-
     }
 
     // Update is called once per frame
