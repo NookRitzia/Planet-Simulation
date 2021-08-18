@@ -7,6 +7,7 @@ public class RotationManager : MonoBehaviour
     // Start is called before the first frame update
     public GameObject planet;
     public float angularVelocity = 60; // In degrees/sec
+    private int rot = 0;
     void Start()
     {
         if (planet == null)
