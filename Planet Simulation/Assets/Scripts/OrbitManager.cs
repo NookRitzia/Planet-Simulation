@@ -15,6 +15,8 @@ public class OrbitManager : MonoBehaviour
     public float semiMinorAxis;
     public bool invertAxes = false;
 
+    public TimeSpeedManager timeSpeedManager 
+
 
     public float tMAngle = 0; // tiltAngle [-45,45]
     public float tmROIO = 0; // referenceOrbitalIntersectionOffset
