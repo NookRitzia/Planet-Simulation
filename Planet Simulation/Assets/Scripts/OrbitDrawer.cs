@@ -11,15 +11,17 @@ public class OrbitDrawer : MonoBehaviour
 
     GameObject revolvingPlanet;
 
-    public float anglesToDraw = 360;
+    public float rotationsToDraw = 1;
+
+    private float anglesToDraw;
 
     public bool drawOrbit = true;
 
     private bool stopDrawingOrbit = false;
     void Start()
     {
-        revolvingPlanet = this.gameObject;    
-
+        revolvingPlanet = this.gameObject;
+        anglesToDraw = 360 * rotationsToDraw;
         if (lineRenderer == null && drawOrbit)
         {
             this.gameObject.AddComponent(typeof(LineRenderer));
