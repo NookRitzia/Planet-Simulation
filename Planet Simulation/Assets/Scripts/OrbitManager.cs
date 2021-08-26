@@ -15,7 +15,7 @@ public class OrbitManager : MonoBehaviour
     public float semiMinorAxis;
     public bool invertAxes = false;
 
-    public TimeSpeedManager timeSpeedManager 
+    public TimeSpeedManager timeSpeedManager;
 
 
     public float tMAngle = 0; // tiltAngle [-45,45]
@@ -26,6 +26,7 @@ public class OrbitManager : MonoBehaviour
 
     void Start()
     {
+        timeSpeedManager = GameObject.Find("TimeSpeedManagerObject").GetComponent<TimeSpeedManager>();
         gameObject.AddComponent(typeof(TiltManager));
         tiltManager = gameObject.GetComponent<TiltManager>();
         initializeTiltManager();
@@ -44,7 +45,7 @@ public class OrbitManager : MonoBehaviour
     void Update()
     {
         revolvingPlanet.transform.position = finalPosition(angle);
-        angle += angularVelocity * Time.deltaTime;
+        angle += angularVelocity * Time.deltaTime * timeSpeedManager.timeMultplier;
         tiltManager.updatePosition();
     }
 
