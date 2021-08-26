@@ -18,6 +18,8 @@ public class OrbitDrawer : MonoBehaviour
     public bool drawOrbit = true;
 
     private bool stopDrawingOrbit = false;
+
+    public float size = 1f;
     void Start()
     {
         revolvingPlanet = this.gameObject;
@@ -26,6 +28,7 @@ public class OrbitDrawer : MonoBehaviour
         {
             this.gameObject.AddComponent(typeof(LineRenderer));
             lineRenderer = this.gameObject.GetComponent<LineRenderer>();
+            lineRenderer.SetWidth(size, size);
         }
         
         orbitManager = revolvingPlanet.GetComponent<OrbitManager>();

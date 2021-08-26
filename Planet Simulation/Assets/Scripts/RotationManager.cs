@@ -8,8 +8,11 @@ public class RotationManager : MonoBehaviour
     public GameObject planet;
     public float angularVelocity = 60; // In degrees/sec
     private int rot = 0;
+
+    public TimeSpeedManager timeSpeedManager;
     void Start()
     {
+        timeSpeedManager = GameObject.Find("TimeSpeedManagerObject").GetComponent<TimeSpeedManager>();
         if (planet == null)
             planet = this.gameObject;
     }
@@ -17,6 +20,6 @@ public class RotationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        planet.transform.Rotate(new Vector3(0, angularVelocity * Time.deltaTime));
+        planet.transform.Rotate(new Vector3(0, angularVelocity * Time.deltaTime * timeSpeedManager.timeMultplier));
     }
 }

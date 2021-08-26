@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 12882597}
   - component: {fileID: 12882596}
   - component: {fileID: 12882595}
+  - component: {fileID: 12882602}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -244,6 +245,7 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
 --- !u!114 &12882596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,6 +363,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &12882602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12882594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 16300
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &260272914
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +393,7 @@ GameObject:
   - component: {fileID: 260272917}
   - component: {fileID: 260272916}
   - component: {fileID: 260272915}
+  - component: {fileID: 260272922}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -440,6 +458,7 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
 --- !u!135 &260272918
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -516,6 +535,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &260272922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260272914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 30
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &597183199
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +565,7 @@ GameObject:
   - component: {fileID: 597183202}
   - component: {fileID: 597183201}
   - component: {fileID: 597183200}
+  - component: {fileID: 597183207}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -595,6 +630,7 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
 --- !u!135 &597183203
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -671,6 +707,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597183207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597183199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 124
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &678656724
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +736,7 @@ GameObject:
   - component: {fileID: 678656725}
   - component: {fileID: 678656729}
   - component: {fileID: 678656730}
+  - component: {fileID: 678656731}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -810,6 +862,22 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
+--- !u!114 &678656731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678656724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 7300
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &793133486
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +985,7 @@ GameObject:
   - component: {fileID: 912448827}
   - component: {fileID: 912448826}
   - component: {fileID: 912448825}
+  - component: {fileID: 912448832}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -940,6 +1009,7 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
 --- !u!114 &912448826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,6 +1127,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912448832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912448824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 7120
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &954758660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff3d41d5742b824cb63ee6675f7dc9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMultplier: 1
+  timeMultplier: 0.25
 --- !u!4 &954758662
 Transform:
   m_ObjectHideFlags: 0
@@ -1116,6 +1201,7 @@ GameObject:
   - component: {fileID: 1251875724}
   - component: {fileID: 1251875723}
   - component: {fileID: 1251875722}
+  - component: {fileID: 1251875729}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -1139,6 +1225,7 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 1
   drawOrbit: 1
+  size: 3
 --- !u!114 &1251875723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,6 +1343,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1251875729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251875721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 17500
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &1842950916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1465,7 @@ GameObject:
   - component: {fileID: 1933826136}
   - component: {fileID: 1933826141}
   - component: {fileID: 1933826142}
+  - component: {fileID: 1933826143}
   m_Layer: 0
   m_Name: Earth's Moon
   m_TagString: Untagged
@@ -1584,6 +1687,22 @@ MonoBehaviour:
   orbitManager: {fileID: 0}
   rotationsToDraw: 13
   drawOrbit: 0
+  size: 3
+--- !u!114 &1933826143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933826135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 268
+  timeSpeedManager: {fileID: 0}
 --- !u!1 &1936597001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1715,7 @@ GameObject:
   - component: {fileID: 1936597005}
   - component: {fileID: 1936597004}
   - component: {fileID: 1936597003}
+  - component: {fileID: 1936597002}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -1603,6 +1723,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1936597002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936597001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccd0f5a914eb8d4a9db8cd9fbe4c6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  angularVelocity: 270
+  timeSpeedManager: {fileID: 0}
 --- !u!135 &1936597003
 SphereCollider:
   m_ObjectHideFlags: 0
