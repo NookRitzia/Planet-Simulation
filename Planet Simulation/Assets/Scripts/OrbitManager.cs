@@ -17,6 +17,7 @@ public class OrbitManager : MonoBehaviour
 
     public TimeSpeedManager timeSpeedManager;
 
+    public float orbitAngleOffset = 0; // In degrees
 
     public float tMAngle = 0; // tiltAngle [-45,45]
     public float tmROIO = 0; // referenceOrbitalIntersectionOffset
@@ -55,11 +56,11 @@ public class OrbitManager : MonoBehaviour
         Vector3 originPosition;
         if (invertAxes)
         {
-                originPosition = new Vector3(semiMajorAxis * Mathf.Cos(Mathf.Deg2Rad * rotationAngle), 0, semiMinorAxis * Mathf.Sin(Mathf.Deg2Rad * rotationAngle));
+                originPosition = new Vector3(semiMajorAxis * Mathf.Cos(Mathf.Deg2Rad * (rotationAngle + orbitAngleOffset)), 0, semiMinorAxis * Mathf.Sin(Mathf.Deg2Rad * (rotationAngle + orbitAngleOffset)));
         }
         else
         {
-                originPosition = new Vector3(semiMinorAxis * Mathf.Cos(Mathf.Deg2Rad * rotationAngle), 0, semiMajorAxis * Mathf.Sin(Mathf.Deg2Rad * rotationAngle));
+                originPosition = new Vector3(semiMinorAxis * Mathf.Cos(Mathf.Deg2Rad * (rotationAngle + orbitAngleOffset)), 0, semiMajorAxis * Mathf.Sin(Mathf.Deg2Rad * (rotationAngle + orbitAngleOffset)));
         }
 
         Vector3 finalOffset = new Vector3(center.x + offset.x, center.y + offset.y, center.z + offset.z);
