@@ -20,6 +20,6 @@ public class RotationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        planet.transform.Rotate(new Vector3(0, angularVelocity * Time.deltaTime * timeSpeedManager.timeMultplier));
+        planet.transform.Rotate(new Vector3(0, angularVelocity * Time.deltaTime * timeSpeedManager.timeMultiplier));
     }
 }

@@ -46,7 +46,7 @@ public class OrbitManager : MonoBehaviour
     void Update()
     {
         revolvingPlanet.transform.position = finalPosition(angle);
-        angle += angularVelocity * Time.deltaTime * timeSpeedManager.timeMultplier;
+        angle += angularVelocity * Time.deltaTime * timeSpeedManager.timeMultiplier;
         tiltManager.updatePosition();
     }
 
